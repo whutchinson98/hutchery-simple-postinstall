@@ -93,11 +93,10 @@ export const runPostInstall = (argumentMap: ArgumentMap): void => {
  * map and run the subModule installs
  */
 export const runInstallJob = (): void => {
-  console.log(process.argv);
   const argumentMap: ArgumentMap = parseAndFormatArguments(
     process.argv.slice(2),
   );
-  console.log(argumentMap);
+
   if (!argumentMap['subModuleList']) {
     throw new Error('subModuleList is a required parameter to be set');
   }
