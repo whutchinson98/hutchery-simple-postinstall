@@ -1,6 +1,6 @@
 {
   "name": "hutchery-simple-postinstall",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple dependency installer for sub-folders in your project",
   "main": "index.js",
   "scripts": {
