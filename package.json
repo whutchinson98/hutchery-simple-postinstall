@@ -1,6 +1,6 @@
 {
   "name": "hutchery-simple-postinstall",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple dependency installer for sub-folders in your project",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,10 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whutchinson98/hutchery-simple-postinstall"
+  },
   "author": "William Hutchinson",
   "license": "ISC",
   "devDependencies": {
