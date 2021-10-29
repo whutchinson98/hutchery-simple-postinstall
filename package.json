@@ -4,8 +4,16 @@
   "description": "A simple dependency installer for sub-folders in your project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --silent --detectOpenHandles --forceExit",
+    "test:coverage": "jest --silent --collectCoverageFrom=src/**/**.ts --coverage",
+    "lint": "node ./node_modules/eslint/bin/eslint.js --ext .ts ./src/ ./__tests__/",
+    "lint:fix": "npm run lint -- --fix"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "author": "William Hutchinson",
   "license": "ISC",
   "devDependencies": {
@@ -15,7 +23,9 @@
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
     "jest": "^27.3.1",
+    "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
